@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using RequisicionesApi.Interfaces;
@@ -77,6 +77,17 @@ builder.Services.AddScoped<ProvCRequisicionesService>(provider =>
 // DI: interfaces -> implementaciones
 builder.Services.AddScoped<ITimelineRepository, SqlTimelineRepository>();
 builder.Services.AddScoped<ITimelineService, TimelineService>();
+
+
+// Antes de registrar el servicio CondAdicEncabezadoService, define la variable connectionString
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+// ✅ Registrar el servicio con inyección de dependencia usando la variable connectionString
+builder.Services.AddScoped<ICondAdicEncabezadoService>(sp =>
+    new CondAdicEncabezadoService(builder.Configuration));
+
+
+
 
 
 builder.Logging.ClearProviders();

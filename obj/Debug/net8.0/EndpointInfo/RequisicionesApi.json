@@ -472,6 +472,146 @@
         }
       }
     },
+    "/api/CondAdicEncabezado": {
+      "get": {
+        "tags": [
+          "CondAdicEncabezado"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "CondAdicEncabezado"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CondAdicEncabezado"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CondAdicEncabezado"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CondAdicEncabezado"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "CondAdicEncabezado"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CondAdicEncabezado"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CondAdicEncabezado"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CondAdicEncabezado"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CondAdicEncabezado/{reqIdClave}/{idCondicion}": {
+      "get": {
+        "tags": [
+          "CondAdicEncabezado"
+        ],
+        "parameters": [
+          {
+            "name": "reqIdClave",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "idCondicion",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "CondAdicEncabezado"
+        ],
+        "parameters": [
+          {
+            "name": "reqIdClave",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "idCondicion",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CondAdicEncabezado/ListaCondic": {
+      "get": {
+        "tags": [
+          "CondAdicEncabezado"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Criterio": {
       "get": {
         "tags": [
@@ -3614,6 +3754,42 @@
           "cpNombre": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CondAdicEncabezado": {
+        "required": [
+          "idCondicion",
+          "proceso",
+          "provIdProv",
+          "reqIdClave"
+        ],
+        "type": "object",
+        "properties": {
+          "reqIdClave": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCondicion": {
+            "type": "string",
+            "nullable": true
+          },
+          "provIdProv": {
+            "type": "string",
+            "nullable": true
+          },
+          "proceso": {
+            "type": "string",
+            "nullable": true
+          },
+          "posicion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "importe": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

@@ -286,6 +286,100 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RequisicionesApi.Controllers.CondAdicEncabezadoController",
+    "Method": "GetAll",
+    "RelativePath": "api/CondAdicEncabezado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RequisicionesApi.Controllers.CondAdicEncabezadoController",
+    "Method": "Insert",
+    "RelativePath": "api/CondAdicEncabezado",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "RequisicionesApi.Models.Condiciones.CondAdicEncabezado",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RequisicionesApi.Controllers.CondAdicEncabezadoController",
+    "Method": "Update",
+    "RelativePath": "api/CondAdicEncabezado",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "RequisicionesApi.Models.Condiciones.CondAdicEncabezado",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RequisicionesApi.Controllers.CondAdicEncabezadoController",
+    "Method": "GetById",
+    "RelativePath": "api/CondAdicEncabezado/{reqIdClave}/{idCondicion}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reqIdClave",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "idCondicion",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RequisicionesApi.Controllers.CondAdicEncabezadoController",
+    "Method": "Delete",
+    "RelativePath": "api/CondAdicEncabezado/{reqIdClave}/{idCondicion}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reqIdClave",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "idCondicion",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RequisicionesApi.Controllers.CondAdicEncabezadoController",
+    "Method": "GetAllCondicion",
+    "RelativePath": "api/CondAdicEncabezado/ListaCondic",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RequisicionesApi.Controllers.CriterioController",
     "Method": "GetAll",
     "RelativePath": "api/Criterio",

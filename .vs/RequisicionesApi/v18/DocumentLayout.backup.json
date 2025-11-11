@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\controllers\\timelinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:controllers\\timelinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\controllers\\condadicencabezadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:controllers\\condadicencabezadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\services\\sqltimelinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:services\\sqltimelinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\services\\condadicencabezadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:services\\condadicencabezadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\services\\imputacionvalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:services\\imputacionvalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\interfaces\\icondadicencabezadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:interfaces\\icondadicencabezadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\interfaces\\itimelineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:interfaces\\itimelineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\models\\condiciones\\condicion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:models\\condiciones\\condicion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\interfaces\\itimelinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:interfaces\\itimelinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\models\\timelinequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:models\\timelinequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\models\\timelineeventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:models\\timelineeventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\models\\condiciones\\condadicencabezado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:models\\condiciones\\condadicencabezado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 378,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,88 +54,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ImputacionValService.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\ImputacionValService.cs",
-              "RelativeDocumentMoniker": "Services\\ImputacionValService.cs",
-              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\ImputacionValService.cs",
-              "RelativeToolTip": "Services\\ImputacionValService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T21:34:32.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SqlTimelineRepository.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\SqlTimelineRepository.cs",
-              "RelativeDocumentMoniker": "Services\\SqlTimelineRepository.cs",
-              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\SqlTimelineRepository.cs",
-              "RelativeToolTip": "Services\\SqlTimelineRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T21:26:59.467Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ITimelineService.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Interfaces\\ITimelineService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ITimelineService.cs",
-              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Interfaces\\ITimelineService.cs",
-              "RelativeToolTip": "Interfaces\\ITimelineService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "Condicion.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\Condiciones\\Condicion.cs",
+              "RelativeDocumentMoniker": "Models\\Condiciones\\Condicion.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\Condiciones\\Condicion.cs",
+              "RelativeToolTip": "Models\\Condiciones\\Condicion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T21:25:48.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ITimelineRepository.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Interfaces\\ITimelineRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ITimelineRepository.cs",
-              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Interfaces\\ITimelineRepository.cs",
-              "RelativeToolTip": "Interfaces\\ITimelineRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T21:24:45.692Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TimelineQuery.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\TimelineQuery.cs",
-              "RelativeDocumentMoniker": "Models\\TimelineQuery.cs",
-              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\TimelineQuery.cs",
-              "RelativeToolTip": "Models\\TimelineQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T21:23:18.862Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TimelineController.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\TimelineController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TimelineController.cs",
-              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\TimelineController.cs",
-              "RelativeToolTip": "Controllers\\TimelineController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAzwCAAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T21:14:56.309Z",
+              "WhenOpened": "2025-11-11T22:40:19.349Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TimelineEventDto.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\TimelineEventDto.cs",
-              "RelativeDocumentMoniker": "Models\\TimelineEventDto.cs",
-              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\TimelineEventDto.cs",
-              "RelativeToolTip": "Models\\TimelineEventDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABBAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAADwv1gAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T21:13:34.053Z"
+              "WhenOpened": "2025-11-11T22:19:35.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CondAdicEncabezadoController.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\CondAdicEncabezadoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CondAdicEncabezadoController.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\CondAdicEncabezadoController.cs",
+              "RelativeToolTip": "Controllers\\CondAdicEncabezadoController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T22:06:42.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CondAdicEncabezadoService.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\CondAdicEncabezadoService.cs",
+              "RelativeDocumentMoniker": "Services\\CondAdicEncabezadoService.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\CondAdicEncabezadoService.cs",
+              "RelativeToolTip": "Services\\CondAdicEncabezadoService.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAcwHwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T21:54:06.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICondAdicEncabezadoService.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Interfaces\\ICondAdicEncabezadoService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ICondAdicEncabezadoService.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Interfaces\\ICondAdicEncabezadoService.cs",
+              "RelativeToolTip": "Interfaces\\ICondAdicEncabezadoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T21:53:22.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CondAdicEncabezado.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\Condiciones\\CondAdicEncabezado.cs",
+              "RelativeDocumentMoniker": "Models\\Condiciones\\CondAdicEncabezado.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\Condiciones\\CondAdicEncabezado.cs",
+              "RelativeToolTip": "Models\\Condiciones\\CondAdicEncabezado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T21:52:23.209Z",
+              "EditorCaption": ""
             }
           ]
         }
