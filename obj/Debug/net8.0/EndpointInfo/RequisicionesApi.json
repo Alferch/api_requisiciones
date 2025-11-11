@@ -1,0 +1,4761 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Requisiciones API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Adjudicacion/enviar-correo": {
+      "post": {
+        "tags": [
+          "Adjudicacion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdjudicacionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdjudicacionRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdjudicacionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Adjudicacion/notificar-usuario": {
+      "post": {
+        "tags": [
+          "Adjudicacion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdjudicacionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdjudicacionRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdjudicacionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Area": {
+      "get": {
+        "tags": [
+          "Area"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Area"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AreaDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AreaDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AreaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Area/{id}": {
+      "get": {
+        "tags": [
+          "Area"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Area"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AreaDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AreaDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AreaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Area"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Autorizacion/flujo/generar": {
+      "post": {
+        "tags": [
+          "Autorizacion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerarFlujoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerarFlujoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerarFlujoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Autorizacion/accion": {
+      "post": {
+        "tags": [
+          "Autorizacion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccionRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Autorizacion/pendientes": {
+      "get": {
+        "tags": [
+          "Autorizacion"
+        ],
+        "parameters": [
+          {
+            "name": "usuario",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Autorizacion/timeline/{reqIdClave}": {
+      "get": {
+        "tags": [
+          "Autorizacion"
+        ],
+        "parameters": [
+          {
+            "name": "reqIdClave",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Autorizacion/estado/{reqIdClave}": {
+      "get": {
+        "tags": [
+          "Autorizacion"
+        ],
+        "parameters": [
+          {
+            "name": "reqIdClave",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ClasProv": {
+      "get": {
+        "tags": [
+          "ClasProv"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ClasProv"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClasProv"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClasProv"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClasProv"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ClasProv/{id}": {
+      "get": {
+        "tags": [
+          "ClasProv"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ClasProv"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClasProv"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClasProv"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClasProv"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ClasProv"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Criterio": {
+      "get": {
+        "tags": [
+          "Criterio"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Criterio"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Criterio"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Criterio"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Criterio"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Criterio/soc/{socId}": {
+      "get": {
+        "tags": [
+          "Criterio"
+        ],
+        "parameters": [
+          {
+            "name": "socId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Criterio/nombre/{nombre}": {
+      "get": {
+        "tags": [
+          "Criterio"
+        ],
+        "parameters": [
+          {
+            "name": "nombre",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Criterio/{id}": {
+      "put": {
+        "tags": [
+          "Criterio"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Criterio"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Criterio"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Criterio"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Criterio"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/flujo/enviar": {
+      "post": {
+        "tags": [
+          "FlujoAut"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EnviarAutorizacionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EnviarAutorizacionRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EnviarAutorizacionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/flujo/aprobar": {
+      "post": {
+        "tags": [
+          "FlujoAut"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AprobarNivelRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AprobarNivelRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AprobarNivelRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/flujo/rechazar": {
+      "post": {
+        "tags": [
+          "FlujoAut"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AprobarNivelRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AprobarNivelRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AprobarNivelRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/flujo/cancelar": {
+      "post": {
+        "tags": [
+          "FlujoAut"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CancelarRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CancelarRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CancelarRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/flujo/pendientes": {
+      "get": {
+        "tags": [
+          "FlujoAut"
+        ],
+        "parameters": [
+          {
+            "name": "usrIdClave",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "usrIdSoc",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/flujo/estado": {
+      "get": {
+        "tags": [
+          "FlujoAut"
+        ],
+        "parameters": [
+          {
+            "name": "reqId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "moneda",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "importe",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoFlujoResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoFlujoResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoFlujoResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/flujo/notificar-proveedor": {
+      "post": {
+        "tags": [
+          "FlujoAut"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificacionProveedorRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificacionProveedorRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificacionProveedorRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/GrupoMaterial": {
+      "get": {
+        "tags": [
+          "GrupoMaterial"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GrupoMaterial"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GrupoMaterial"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GrupoMaterial"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "GrupoMaterial"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrupoMaterial"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrupoMaterial"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrupoMaterial"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/GrupoMaterial/{id}": {
+      "get": {
+        "tags": [
+          "GrupoMaterial"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GrupoMaterial"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GrupoMaterial"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GrupoMaterial"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "GrupoMaterial"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrupoMaterial"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrupoMaterial"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrupoMaterial"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "GrupoMaterial"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HisPedidos/Idmaterial/{idMaterial}": {
+      "get": {
+        "tags": [
+          "HisPedidos"
+        ],
+        "parameters": [
+          {
+            "name": "idMaterial",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/HisPedidos/descripcion": {
+      "get": {
+        "tags": [
+          "HisPedidos"
+        ],
+        "parameters": [
+          {
+            "name": "descripcion",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Idiomas": {
+      "get": {
+        "tags": [
+          "Idiomas"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Idiomas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Idioma"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Idioma"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Idioma"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Idiomas/{id}": {
+      "get": {
+        "tags": [
+          "Idiomas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Idiomas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Idioma"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Idioma"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Idioma"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Idiomas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ImputacionVal": {
+      "get": {
+        "tags": [
+          "ImputacionVal"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ImputacionVal"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ImputacionValDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ImputacionValDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ImputacionValDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ImputacionVal/{id}": {
+      "get": {
+        "tags": [
+          "ImputacionVal"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ImputacionVal"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ImputacionValDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ImputacionValDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ImputacionValDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ImputacionVal"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ImputacionVal/detalle": {
+      "get": {
+        "tags": [
+          "ImputacionVal"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Login/login": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MaestroMaterial": {
+      "get": {
+        "tags": [
+          "MaestroMaterial"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaestroMaterialModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaestroMaterialModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaestroMaterialModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "MaestroMaterial"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaestroMaterialModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaestroMaterialModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaestroMaterialModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaestroMaterialModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaestroMaterialModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaestroMaterialModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MaestroMaterial/buscar": {
+      "get": {
+        "tags": [
+          "MaestroMaterial"
+        ],
+        "parameters": [
+          {
+            "name": "descripcion",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaestroMaterialModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaestroMaterialModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaestroMaterialModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MaestroMaterial/{clave}": {
+      "get": {
+        "tags": [
+          "MaestroMaterial"
+        ],
+        "parameters": [
+          {
+            "name": "clave",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaestroMaterialModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaestroMaterialModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaestroMaterialModel"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "MaestroMaterial"
+        ],
+        "parameters": [
+          {
+            "name": "clave",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaestroMaterialModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaestroMaterialModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaestroMaterialModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "MaestroMaterial"
+        ],
+        "parameters": [
+          {
+            "name": "clave",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ProvCRequisiciones/pendientes/{correo}": {
+      "get": {
+        "tags": [
+          "ProvCRequisiciones"
+        ],
+        "parameters": [
+          {
+            "name": "correo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProvCRequisicion"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProvCRequisicion"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProvCRequisicion"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ProvCRequisiciones/detalle/{idRequisicion}": {
+      "get": {
+        "tags": [
+          "ProvCRequisiciones"
+        ],
+        "parameters": [
+          {
+            "name": "idRequisicion",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "proveedorId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProvCRequisicionDetalle"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProvCRequisicionDetalle"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProvCRequisicionDetalle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ProvCRequisiciones": {
+      "post": {
+        "tags": [
+          "ProvCRequisiciones"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ProvCInsertRequisicionRequest"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ProvCInsertRequisicionRequest"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ProvCInsertRequisicionRequest"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Proveedores/filtrar": {
+      "get": {
+        "tags": [
+          "Proveedores"
+        ],
+        "parameters": [
+          {
+            "name": "Pagina",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Tamano",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Nombre",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "RFC",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Proveedores": {
+      "get": {
+        "tags": [
+          "Proveedores"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProveedorModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProveedorModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProveedorModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Proveedores"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProveedorModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProveedorModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProveedorModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Proveedores/{id}": {
+      "get": {
+        "tags": [
+          "Proveedores"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProveedorModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProveedorModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProveedorModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Proveedores"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProveedorRepository"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProveedorRepository"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProveedorRepository"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Proveedores"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Requisiciones/reqdetalleprov/{clave}/{idSoc}": {
+      "get": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "parameters": [
+          {
+            "name": "clave",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "idSoc",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Requisiciones/detalle-prov/lote": {
+      "post": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "parameters": [
+          {
+            "name": "soc",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AutProvReqCerradaDetalleProvDtoList"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AutProvReqCerradaDetalleProvDtoList"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AutProvReqCerradaDetalleProvDtoList"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Requisiciones": {
+      "post": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequisicionDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequisicionDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequisicionDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequisicionDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequisicionDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequisicionDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Requisiciones/id/{id}": {
+      "get": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "soc",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Requisiciones/sociedad/{soc}/{idusuario}": {
+      "get": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "parameters": [
+          {
+            "name": "soc",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "idusuario",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Requisiciones/comparativo/{soc}/{requisicion}": {
+      "get": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "parameters": [
+          {
+            "name": "soc",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "requisicion",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "opcion",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Requisiciones/{id}": {
+      "delete": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Requisiciones/cerradas": {
+      "get": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Requisiciones/cerradas/{id}/detalles": {
+      "get": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Requisiciones/cerradas/{idSociedad}/{reqId}/detallesProv": {
+      "get": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "parameters": [
+          {
+            "name": "idSociedad",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reqId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Requisiciones/cancelar": {
+      "post": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "parameters": [
+          {
+            "name": "idRequisicion",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "idSociedad",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Requisiciones/timeline": {
+      "get": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "parameters": [
+          {
+            "name": "usrIdSoc",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "estados",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RequisicionTimelineDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RequisicionTimelineDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RequisicionTimelineDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Requisiciones/GetProveedoresPorMaterial": {
+      "get": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "parameters": [
+          {
+            "name": "campo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "opcin",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Requisiciones/pendientesAut": {
+      "get": {
+        "tags": [
+          "Requisiciones"
+        ],
+        "parameters": [
+          {
+            "name": "usuario",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sociedad",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "idRol",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Roles": {
+      "get": {
+        "tags": [
+          "Roles"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Roles"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Roles/{id}": {
+      "get": {
+        "tags": [
+          "Roles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Roles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RolDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Roles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Sociedad": {
+      "get": {
+        "tags": [
+          "Sociedad"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Sociedad"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SociedadCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SociedadCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SociedadCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Sociedad/{id}": {
+      "get": {
+        "tags": [
+          "Sociedad"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Sociedad"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SociedadUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SociedadUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SociedadUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Sociedad"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubArea": {
+      "get": {
+        "tags": [
+          "SubArea"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SubArea"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubAreaDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubAreaDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubAreaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubArea/{id}": {
+      "get": {
+        "tags": [
+          "SubArea"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SubArea"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubAreaDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubAreaDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubAreaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SubArea"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Timeline": {
+      "get": {
+        "tags": [
+          "Timeline"
+        ],
+        "parameters": [
+          {
+            "name": "numero",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "useLike",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "desde",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "hasta",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "hito",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "estado",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "timeline"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimelineEventDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimelineEventDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimelineEventDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Timeline/{numero}": {
+      "get": {
+        "tags": [
+          "Timeline"
+        ],
+        "parameters": [
+          {
+            "name": "numero",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimelineEventDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimelineEventDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimelineEventDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuario/ListaUsr": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuario": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuario/{id}": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/UsuarioEdicion/{usrIdClave}": {
+      "get": {
+        "tags": [
+          "UsuarioEdicion"
+        ],
+        "parameters": [
+          {
+            "name": "usrIdClave",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "UsuarioEdicion"
+        ],
+        "parameters": [
+          {
+            "name": "usrIdClave",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioEdicionDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioEdicionDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioEdicionDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "UsuarioEdicion"
+        ],
+        "parameters": [
+          {
+            "name": "usrIdClave",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/UsuarioEdicion": {
+      "post": {
+        "tags": [
+          "UsuarioEdicion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioEdicionDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioEdicionDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioEdicionDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AccionRequest": {
+        "type": "object",
+        "properties": {
+          "reqIdClave": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "accion": {
+            "type": "string",
+            "nullable": true
+          },
+          "comentario": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AdjudicacionRequest": {
+        "type": "object",
+        "properties": {
+          "reqIdClave": {
+            "type": "string",
+            "nullable": true
+          },
+          "proveedorId": {
+            "type": "string",
+            "nullable": true
+          },
+          "provIdSoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailUsuario": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AnexoDto": {
+        "type": "object",
+        "properties": {
+          "reqIdClave": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqAIdSoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqidposNo": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "contenidoBase64": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AprobarNivelRequest": {
+        "type": "object",
+        "properties": {
+          "reqId": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "comentario": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AreaDto": {
+        "type": "object",
+        "properties": {
+          "arIdArea": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "arNombre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AutProvReqCerradaDetalleProvDto": {
+        "type": "object",
+        "properties": {
+          "reqIdClave": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdIdSoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdIdClave": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqidposNo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "reqdpMatNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdpMatDes": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdCantidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "reqdUnidadMed": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdFecEntrega": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "reqdCiudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdMunicipio": {
+            "type": "string",
+            "nullable": true
+          },
+          "dpIdClave": {
+            "type": "string",
+            "nullable": true
+          },
+          "prov1": {
+            "type": "string",
+            "nullable": true
+          },
+          "prov2": {
+            "type": "string",
+            "nullable": true
+          },
+          "prov3": {
+            "type": "string",
+            "nullable": true
+          },
+          "prov4": {
+            "type": "string",
+            "nullable": true
+          },
+          "prov5": {
+            "type": "string",
+            "nullable": true
+          },
+          "authorize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "accion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AutProvReqCerradaDetalleProvDtoList": {
+        "required": [
+          "accion",
+          "modelos",
+          "vigencia"
+        ],
+        "type": "object",
+        "properties": {
+          "accion": {
+            "type": "string",
+            "nullable": true
+          },
+          "vigencia": {
+            "type": "string",
+            "nullable": true
+          },
+          "modelos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AutProvReqCerradaDetalleProvDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CancelarRequest": {
+        "type": "object",
+        "properties": {
+          "reqId": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "motivo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ClasProv": {
+        "type": "object",
+        "properties": {
+          "cpIdclas": {
+            "type": "string",
+            "nullable": true
+          },
+          "cpNombre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Criterio": {
+        "type": "object",
+        "properties": {
+          "criId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "criIdSoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "criNombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "criPonderacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "criDescripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "criCampo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DetalleRequisicionDto": {
+        "type": "object",
+        "properties": {
+          "reqIdClave": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdIdSoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqidposNo": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "reqdpMatNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdpMatDes": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdCantidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "reqdUnidadMed": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdEspecAnexos": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdFecEntrega": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "reqdCiudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdMunicipio": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdCuenta": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdIdImp": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdIdAreaC": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqdProvId": {
+            "type": "string",
+            "nullable": true
+          },
+          "anexo": {
+            "$ref": "#/components/schemas/AnexoDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EnviarAutorizacionRequest": {
+        "type": "object",
+        "properties": {
+          "reqId": {
+            "type": "string",
+            "nullable": true
+          },
+          "validarContraMatriz": {
+            "type": "boolean"
+          },
+          "importe": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "moneda": {
+            "type": "string",
+            "nullable": true
+          },
+          "centroCosto": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadoFlujoResponse": {
+        "type": "object",
+        "properties": {
+          "reqId": {
+            "type": "string",
+            "nullable": true
+          },
+          "sociedad": {
+            "type": "string",
+            "nullable": true
+          },
+          "centroCosto": {
+            "type": "string",
+            "nullable": true
+          },
+          "moneda": {
+            "type": "string",
+            "nullable": true
+          },
+          "importe": {
+            "type": "number",
+            "format": "double"
+          },
+          "nivelesRequeridosCsv": {
+            "type": "string",
+            "nullable": true
+          },
+          "niveles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NivelEstado"
+            },
+            "nullable": true
+          },
+          "completado": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GenerarFlujoRequest": {
+        "type": "object",
+        "properties": {
+          "reqIdClave": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrIdSoc": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GrupoMaterial": {
+        "type": "object",
+        "properties": {
+          "mmatIdGrupoM": {
+            "type": "string",
+            "nullable": true
+          },
+          "mmatDescripción": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Idioma": {
+        "type": "object",
+        "properties": {
+          "idIdIdioma": {
+            "type": "string",
+            "nullable": true
+          },
+          "idNombre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ImputacionValDto": {
+        "type": "object",
+        "properties": {
+          "impIdImp": {
+            "type": "string",
+            "nullable": true
+          },
+          "impIdSArea": {
+            "type": "string",
+            "nullable": true
+          },
+          "impvValor": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginModel": {
+        "type": "object",
+        "properties": {
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginRequest": {
+        "type": "object",
+        "properties": {
+          "mail": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MaestroMaterialModel": {
+        "required": [
+          "mmatDescripción",
+          "mmatEstado",
+          "mmatFechaultpedido",
+          "mmatIdClave",
+          "mmatIdCompleto",
+          "mmatIdGrupoM",
+          "mmatIdSoc",
+          "mmatMoneda",
+          "mmatPrecioMM",
+          "mmatTipoM",
+          "mmatUnidadMedida"
+        ],
+        "type": "object",
+        "properties": {
+          "mmatIdClave": {
+            "maxLength": 18,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mmatIdSoc": {
+            "maxLength": 4,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mmatIdCompleto": {
+            "maxLength": 18,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mmatDescripción": {
+            "maxLength": 40,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mmatTipoM": {
+            "maxLength": 4,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mmatIdGrupoM": {
+            "maxLength": 9,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mmatUnidadMedida": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mmatMoneda": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mmatPrecioMM": {
+            "maxLength": 14,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mmatExistencia": {
+            "maxLength": 14,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "mmatUltimopedido": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "mmatFechaultpedido": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "mmatEstado": {
+            "minLength": 1,
+            "pattern": "A|I",
+            "type": "string"
+          },
+          "mmatEspecificaciones": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NivelEstado": {
+        "type": "object",
+        "properties": {
+          "levelCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaDecisionUtc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "usuarioDecision": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NotificacionProveedorRequest": {
+        "type": "object",
+        "properties": {
+          "reqId": {
+            "type": "string",
+            "nullable": true
+          },
+          "proveedorEmail": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProvCInsertRequisicionRequest": {
+        "type": "object",
+        "properties": {
+          "idClave": {
+            "type": "string",
+            "nullable": true
+          },
+          "posNo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idSoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "provId": {
+            "type": "string",
+            "nullable": true
+          },
+          "precioUnit": {
+            "type": "number",
+            "format": "double"
+          },
+          "moneda": {
+            "type": "string",
+            "nullable": true
+          },
+          "unidadMed": {
+            "type": "string",
+            "nullable": true
+          },
+          "cargoExtra": {
+            "type": "number",
+            "format": "double"
+          },
+          "fechaEntrega": {
+            "type": "string",
+            "nullable": true
+          },
+          "condPago": {
+            "type": "string",
+            "nullable": true
+          },
+          "vendedor": {
+            "type": "string",
+            "nullable": true
+          },
+          "cantidad": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProvCRequisicion": {
+        "type": "object",
+        "properties": {
+          "idRequisicion": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaAviso": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaCreacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "productos": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "proveedorId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProvCRequisicionDetalle": {
+        "type": "object",
+        "properties": {
+          "idRequisicion": {
+            "type": "string",
+            "nullable": true
+          },
+          "posicion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "materialNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "materialDesc": {
+            "type": "string",
+            "nullable": true
+          },
+          "unidadMed": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaEntrega": {
+            "type": "string",
+            "nullable": true
+          },
+          "ciudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "municipio": {
+            "type": "string",
+            "nullable": true
+          },
+          "proveedorId": {
+            "type": "string",
+            "nullable": true
+          },
+          "anexo": {
+            "type": "string",
+            "nullable": true
+          },
+          "cantidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sociedad": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProveedorModel": {
+        "required": [
+          "provCorreo",
+          "provGrpoNombre",
+          "provIdGrupoM",
+          "provIdProv",
+          "provIdSoc",
+          "provNombre",
+          "provNomVendedor",
+          "provRFC",
+          "provsocNombre",
+          "provTelefono"
+        ],
+        "type": "object",
+        "properties": {
+          "provIdProv": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provIdSoc": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provIdGrupoM": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provsocNombre": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provNombre": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provGrpoNombre": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provRFC": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provNomVendedor": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provTelefono": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provCorreo": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "format": "email"
+          },
+          "provIdioma": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "provClasificacion": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProveedorRepository": {
+        "required": [
+          "provCorreo",
+          "provIdGrupoM",
+          "provNombre",
+          "provRFC",
+          "provSocId",
+          "provTelefono",
+          "provVendedor"
+        ],
+        "type": "object",
+        "properties": {
+          "provId": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "provSocId": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provIdGrupoM": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provNombre": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provRFC": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provVendedor": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provTelefono": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provCorreo": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "provIdioma": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "provClasificacion": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RequisicionDto": {
+        "required": [
+          "reqDescripcion",
+          "usrIdClave",
+          "usrIdSoc"
+        ],
+        "type": "object",
+        "properties": {
+          "reqIdClave": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "reqFecCreacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "reqHrCreacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "reqFecMod": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reqHrMod": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reqFecFin": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reqHrFin": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reqFecVoBo": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reqHrVoBo": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "usrIdClave": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string"
+          },
+          "usrIdSoc": {
+            "maxLength": 4,
+            "minLength": 0,
+            "type": "string"
+          },
+          "reqIdAcc": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqDescripcion": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "detalles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetalleRequisicionDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RequisicionTimelineDto": {
+        "type": "object",
+        "properties": {
+          "reqIdClave": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrIdSoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqDescripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqFecCreacion": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reqFecFin": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reqFecVoBo": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reqNotFecProvGan": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reqFecCanc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "estadoActual": {
+            "type": "string",
+            "nullable": true
+          },
+          "ultimaFechaCerrada": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "diasDesdeUltimaCerrada": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dur_Creacion_Captura_d": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dur_Captura_VoBo_d": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dur_VoBo_Notif_d": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RolDto": {
+        "type": "object",
+        "properties": {
+          "idRol": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombreRol": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SociedadCreateDto": {
+        "type": "object",
+        "properties": {
+          "socIdSoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "socNombre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SociedadUpdateDto": {
+        "type": "object",
+        "properties": {
+          "socNombre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SubAreaDto": {
+        "type": "object",
+        "properties": {
+          "sarIdSArea": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sarSAreaC": {
+            "type": "string",
+            "nullable": true
+          },
+          "sarIdArea": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "arNombre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TimelineEventDto": {
+        "type": "object",
+        "properties": {
+          "numeroRequisicion": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcionRequisicion": {
+            "type": "string",
+            "nullable": true
+          },
+          "hito": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaEvento": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Usuario": {
+        "type": "object",
+        "properties": {
+          "usrIdClave": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrIdSoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrApellidoP": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrApellidoM": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrCeCo": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrPuesto": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrCorreo": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrNombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "passwordHash": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioDto": {
+        "type": "object",
+        "properties": {
+          "usrIdClave": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrIdSoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "socNombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrNombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrApellidoP": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrApellidoM": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrCorreo": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrPuesto": {
+            "type": "string",
+            "nullable": true
+          },
+          "passwordHash": {
+            "type": "string",
+            "nullable": true
+          },
+          "rolesPermisos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UsuarioRolPermisosDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioEdicionDto": {
+        "type": "object",
+        "properties": {
+          "usuario": {
+            "$ref": "#/components/schemas/UsuarioDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioImputacionDto": {
+        "type": "object",
+        "properties": {
+          "usrIdImp": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrIdRol": {
+            "type": "string",
+            "nullable": true
+          },
+          "impIdSArea": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "subAreaNombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "sarIdArea": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "areaNombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "impNivel": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioRolPermisosDto": {
+        "type": "object",
+        "properties": {
+          "usrIdRol": {
+            "type": "string",
+            "nullable": true
+          },
+          "rolNombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrPerAlta": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrPerUpdate": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrPerDel": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrPerAut": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrPerLic": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrPerReq": {
+            "type": "string",
+            "nullable": true
+          },
+          "configuracion": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrPerVoBo": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrPerCompara": {
+            "type": "string",
+            "nullable": true
+          },
+          "usrPerLibera": {
+            "type": "string",
+            "nullable": true
+          },
+          "imputaciones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UsuarioImputacionDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Ingresa el token JWT con el prefijo 'Bearer ', por ejemplo: Bearer eyJhbGciOiJIUzI1NiIs...",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

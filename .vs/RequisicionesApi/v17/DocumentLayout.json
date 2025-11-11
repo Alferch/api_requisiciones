@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\services\\provcrequisicionesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:services\\provcrequisicionesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\controllers\\provcrequisicionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:controllers\\provcrequisicionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\models\\requisicionprov\\provcinsertrequisicionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:models\\requisicionprov\\provcinsertrequisicionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 378,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProvCRequisicionesController.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\ProvCRequisicionesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProvCRequisicionesController.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\ProvCRequisicionesController.cs",
+              "RelativeToolTip": "Controllers\\ProvCRequisicionesController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwCQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T20:20:01.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProvCRequisicionesService.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\ProvCRequisicionesService.cs",
+              "RelativeDocumentMoniker": "Services\\ProvCRequisicionesService.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\ProvCRequisicionesService.cs",
+              "RelativeToolTip": "Services\\ProvCRequisicionesService.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAhwJoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T20:14:39.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProvCInsertRequisicionRequest.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\RequisicionProv\\ProvCInsertRequisicionRequest.cs",
+              "RelativeDocumentMoniker": "Models\\RequisicionProv\\ProvCInsertRequisicionRequest.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\RequisicionProv\\ProvCInsertRequisicionRequest.cs",
+              "RelativeToolTip": "Models\\RequisicionProv\\ProvCInsertRequisicionRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T20:07:08.07Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
