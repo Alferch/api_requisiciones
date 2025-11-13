@@ -214,7 +214,7 @@ INSERT INTO [dbo].[tblprovRequisiciones]
     [reqppFecEntrega],
     [reqppCondPago],
     [reqppVendedor],
-    [reqppCantidad]
+    [reqppCantidad],[reqppAnexo]
 )
 VALUES
 (
@@ -229,8 +229,8 @@ VALUES
     @reqppFecEntrega,
     @reqppCondPago,
     @reqppVendedor,
-    @reqppCantidad
-
+    @reqppCantidad,
+    @reqppAnexo
 );";
 
                 using var insertCmd = new SqlCommand(insertSql, conn, tx);
@@ -275,7 +275,7 @@ VALUES
                         string.IsNullOrWhiteSpace(r.Vendedor) ? DBNull.Value : r.Vendedor;
 
                     insertCmd.Parameters["@reqppCantidad"].Value = r.Cantidad;
-
+                    insertCmd.Parameters["@reqppAnexo"].Value = r.Anexo64;
                     insertCmd.ExecuteNonQuery();
                 }
 

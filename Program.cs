@@ -88,6 +88,11 @@ builder.Services.AddScoped<ICondAdicEncabezadoService>(sp =>
 
 
 
+// DI
+builder.Services.AddScoped<IDashboardService, DashboardService>();
+
+
+
 
 
 builder.Logging.ClearProviders();

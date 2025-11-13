@@ -14,4 +14,7 @@ public class ProvCInsertRequisicionRequest {
 
     public int Cantidad { get; set; }
 
+    public string Anexo64 { get; set; } = null!;
+
+
 }

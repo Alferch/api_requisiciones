@@ -760,6 +760,129 @@
         }
       }
     },
+    "/api/Dashboard/pivot": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DashboardPivotDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DashboardPivotDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DashboardPivotDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Dashboard/conteo": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConteoResultadoDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConteoResultadoDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConteoResultadoDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Dashboard/resumen": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 50
+            }
+          },
+          {
+            "name": "resultado",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/RequisicionResumenDtoPagedResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RequisicionResumenDtoPagedResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RequisicionResumenDtoPagedResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/flujo/enviar": {
       "post": {
         "tags": [
@@ -3794,6 +3917,20 @@
         },
         "additionalProperties": false
       },
+      "ConteoResultadoDto": {
+        "type": "object",
+        "properties": {
+          "resultado": {
+            "type": "string",
+            "nullable": true
+          },
+          "conteo": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "Criterio": {
         "type": "object",
         "properties": {
@@ -3820,6 +3957,68 @@
           "criCampo": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DashboardPivotDto": {
+        "type": "object",
+        "properties": {
+          "creadas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cerradasXComprador": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "procesoDeAutorizacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estadoFlujoPedido": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "canceladasXVigencia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "canceladas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "total": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "creadasPct": {
+            "type": "number",
+            "format": "double"
+          },
+          "cerradasXCompradorPct": {
+            "type": "number",
+            "format": "double"
+          },
+          "procesoDeAutorizacionPct": {
+            "type": "number",
+            "format": "double"
+          },
+          "estadoFlujoPedidoPct": {
+            "type": "number",
+            "format": "double"
+          },
+          "canceladasXVigenciaPct": {
+            "type": "number",
+            "format": "double"
+          },
+          "canceladasPct": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalPct": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false
@@ -4224,6 +4423,10 @@
           "cantidad": {
             "type": "integer",
             "format": "int32"
+          },
+          "anexo64": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -4536,6 +4739,92 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/DetalleRequisicionDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RequisicionResumenDto": {
+        "type": "object",
+        "properties": {
+          "reqIdClave": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqDescripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqFecFin": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reqFecVoBo": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reqNiveles_Aut": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqFecVigencia": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reqprovgan": {
+            "type": "string",
+            "nullable": true
+          },
+          "estatusVoBo": {
+            "type": "string",
+            "nullable": true
+          },
+          "estadoCabecera": {
+            "type": "string",
+            "nullable": true
+          },
+          "estadoFlujoPedido": {
+            "type": "string",
+            "nullable": true
+          },
+          "estadoVigencia": {
+            "type": "string",
+            "nullable": true
+          },
+          "flujoResumen": {
+            "type": "string",
+            "nullable": true
+          },
+          "resultado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RequisicionResumenDtoPagedResult": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalRows": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RequisicionResumenDto"
             },
             "nullable": true
           }

@@ -3,6 +3,78 @@
   "WorkspaceRootPath": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\interfaces\\idashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:interfaces\\idashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\models\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:models\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\dtos\\requisicionresumendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:dtos\\requisicionresumendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\dtos\\conteoresultadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:dtos\\conteoresultadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\dtos\\dashboardpivotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:dtos\\dashboardpivotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\services\\provcrequisicionesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:services\\provcrequisicionesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\models\\requisicionprov\\provcinsertrequisicionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:models\\requisicionprov\\provcinsertrequisicionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\controllers\\provcrequisicionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:controllers\\provcrequisicionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\controllers\\autorizacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:controllers\\autorizacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\utilidades\\mailbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:utilidades\\mailbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\services\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:services\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\controllers\\adjudicacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:controllers\\adjudicacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\services\\requisicionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:services\\requisicionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\services\\autorizacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:services\\autorizacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\controllers\\requisicioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:controllers\\requisicioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\controllers\\condadicencabezadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:controllers\\condadicencabezadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,10 +91,6 @@
       "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:models\\condiciones\\condicion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|d:\\desarrollo\\requisicioneswebapi\\requisicionesapi\\models\\condiciones\\condadicencabezado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55B3C491-2214-4210-9738-DF733680FD8A}|RequisicionesApi.csproj|solutionrelative:models\\condiciones\\condadicencabezado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -34,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 378,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +122,231 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwDcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T18:15:01.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardService.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\DashboardService.cs",
+              "RelativeDocumentMoniker": "Services\\DashboardService.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\DashboardService.cs",
+              "RelativeToolTip": "Services\\DashboardService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwC4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T18:13:38.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagedResult.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\PagedResult.cs",
+              "RelativeDocumentMoniker": "Models\\PagedResult.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\PagedResult.cs",
+              "RelativeToolTip": "Models\\PagedResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T18:11:44.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAADwv1wAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T22:19:35.6Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "IDashboardService.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Interfaces\\IDashboardService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IDashboardService.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Interfaces\\IDashboardService.cs",
+              "RelativeToolTip": "Interfaces\\IDashboardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T18:12:22.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RequisicionResumenDto.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Dtos\\RequisicionResumenDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\RequisicionResumenDto.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Dtos\\RequisicionResumenDto.cs",
+              "RelativeToolTip": "Dtos\\RequisicionResumenDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T18:11:00.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConteoResultadoDto.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Dtos\\ConteoResultadoDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\ConteoResultadoDto.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Dtos\\ConteoResultadoDto.cs",
+              "RelativeToolTip": "Dtos\\ConteoResultadoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T18:10:32.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DashboardPivotDto.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Dtos\\DashboardPivotDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\DashboardPivotDto.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Dtos\\DashboardPivotDto.cs",
+              "RelativeToolTip": "Dtos\\DashboardPivotDto.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwAgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T18:09:49.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProvCInsertRequisicionRequest.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\RequisicionProv\\ProvCInsertRequisicionRequest.cs",
+              "RelativeDocumentMoniker": "Models\\RequisicionProv\\ProvCInsertRequisicionRequest.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\RequisicionProv\\ProvCInsertRequisicionRequest.cs",
+              "RelativeToolTip": "Models\\RequisicionProv\\ProvCInsertRequisicionRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:35:49.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProvCRequisicionesService.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\ProvCRequisicionesService.cs",
+              "RelativeDocumentMoniker": "Services\\ProvCRequisicionesService.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\ProvCRequisicionesService.cs",
+              "RelativeToolTip": "Services\\ProvCRequisicionesService.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAAAIwBcBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:31:46.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProvCRequisicionesController.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\ProvCRequisicionesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProvCRequisicionesController.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\ProvCRequisicionesController.cs",
+              "RelativeToolTip": "Controllers\\ProvCRequisicionesController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwCwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:31:30.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RequisicionService.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\RequisicionService.cs",
+              "RelativeDocumentMoniker": "Services\\RequisicionService.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\RequisicionService.cs",
+              "RelativeToolTip": "Services\\RequisicionService.cs",
+              "ViewState": "AgIAAEADAAAAAAAAAAAjwEkDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T02:41:52.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdjudicacionController.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\AdjudicacionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdjudicacionController.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\AdjudicacionController.cs",
+              "RelativeToolTip": "Controllers\\AdjudicacionController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAMwE0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T02:41:53.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MailBuilder.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Utilidades\\MailBuilder.cs",
+              "RelativeDocumentMoniker": "Utilidades\\MailBuilder.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Utilidades\\MailBuilder.cs",
+              "RelativeToolTip": "Utilidades\\MailBuilder.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAMwHEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T02:41:53.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AutorizacionController.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\AutorizacionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AutorizacionController.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\AutorizacionController.cs",
+              "RelativeToolTip": "Controllers\\AutorizacionController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAMwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T17:25:49.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MailService.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\MailService.cs",
+              "RelativeDocumentMoniker": "Services\\MailService.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\MailService.cs",
+              "RelativeToolTip": "Services\\MailService.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAMwJ8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T02:41:52.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RequisicionController.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\RequisicionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RequisicionController.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\RequisicionController.cs",
+              "RelativeToolTip": "Controllers\\RequisicionController.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAswKMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T17:25:49.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AutorizacionService.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\AutorizacionService.cs",
+              "RelativeDocumentMoniker": "Services\\AutorizacionService.cs",
+              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\AutorizacionService.cs",
+              "RelativeToolTip": "Services\\AutorizacionService.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAswKgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T17:25:49.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "Condicion.cs",
               "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\Condiciones\\Condicion.cs",
               "RelativeDocumentMoniker": "Models\\Condiciones\\Condicion.cs",
@@ -62,38 +354,24 @@
               "RelativeToolTip": "Models\\Condiciones\\Condicion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T22:40:19.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-11T22:40:19.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAADwv1gAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T22:19:35.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 18,
               "Title": "CondAdicEncabezadoController.cs",
               "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\CondAdicEncabezadoController.cs",
               "RelativeDocumentMoniker": "Controllers\\CondAdicEncabezadoController.cs",
               "ToolTip": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Controllers\\CondAdicEncabezadoController.cs",
               "RelativeToolTip": "Controllers\\CondAdicEncabezadoController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T22:06:42.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 19,
               "Title": "CondAdicEncabezadoService.cs",
               "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Services\\CondAdicEncabezadoService.cs",
               "RelativeDocumentMoniker": "Services\\CondAdicEncabezadoService.cs",
@@ -106,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 20,
               "Title": "ICondAdicEncabezadoService.cs",
               "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Interfaces\\ICondAdicEncabezadoService.cs",
               "RelativeDocumentMoniker": "Interfaces\\ICondAdicEncabezadoService.cs",
@@ -114,12 +392,11 @@
               "RelativeToolTip": "Interfaces\\ICondAdicEncabezadoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T21:53:22.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-11T21:53:22.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 22,
               "Title": "CondAdicEncabezado.cs",
               "DocumentMoniker": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\Models\\Condiciones\\CondAdicEncabezado.cs",
               "RelativeDocumentMoniker": "Models\\Condiciones\\CondAdicEncabezado.cs",
@@ -127,8 +404,7 @@
               "RelativeToolTip": "Models\\Condiciones\\CondAdicEncabezado.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T21:52:23.209Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-11T21:52:23.209Z"
             }
           ]
         }

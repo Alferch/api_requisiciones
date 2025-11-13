@@ -475,6 +475,82 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RequisicionesApi.Controllers.DashboardController",
+    "Method": "GetConteo",
+    "RelativePath": "api/Dashboard/conteo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RequisicionesApi.Dtos.ConteoResultadoDto, RequisicionesApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RequisicionesApi.Controllers.DashboardController",
+    "Method": "GetPivot",
+    "RelativePath": "api/Dashboard/pivot",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "RequisicionesApi.Dtos.DashboardPivotDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RequisicionesApi.Controllers.DashboardController",
+    "Method": "GetResumen",
+    "RelativePath": "api/Dashboard/resumen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "resultado",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RequisicionesApi.Models.PagedResult\u00601[[RequisicionesApi.Dtos.RequisicionResumenDto, RequisicionesApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "RequisicionesApi.Controllers.FlujoAutController",
     "Method": "Aprobar",
     "RelativePath": "api/flujo/aprobar",
