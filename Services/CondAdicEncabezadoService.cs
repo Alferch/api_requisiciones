@@ -19,25 +19,52 @@ namespace RequisicionesApi.Services
 
 
 
-        public async Task InsertAsync(CondAdicEncabezado entidad)
+        public async Task InsertAsync(List<CondAdicEncabezado> entidades)
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"INSERT INTO tblCondAdicEncabezado 
-                             (reqIdClave, IdCondicion, provIdProv, Proceso, Posicion, Importe)
-                             VALUES (@reqIdClave, @IdCondicion, @provIdProv, @Proceso, @Posicion, @Importe)";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@reqIdClave", entidad.ReqIdClave);
-                cmd.Parameters.AddWithValue("@IdCondicion", entidad.IdCondicion);
-                cmd.Parameters.AddWithValue("@provIdProv", entidad.ProvIdProv);
-                cmd.Parameters.AddWithValue("@Proceso", entidad.Proceso);
-                cmd.Parameters.AddWithValue("@Posicion", entidad.Posicion);
-                cmd.Parameters.AddWithValue("@Importe", entidad.Importe);
+                         (reqIdClave, IdCondicion, provIdProv, Proceso, Posicion, Importe)
+                         VALUES (@reqIdClave, @IdCondicion, @provIdProv, @Proceso, @Posicion, @Importe)";
 
                 await conn.OpenAsync();
-                await cmd.ExecuteNonQueryAsync();
+
+                foreach (var entidad in entidades)
+                {
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@reqIdClave", entidad.ReqIdClave);
+                        cmd.Parameters.AddWithValue("@IdCondicion", entidad.IdCondicion);
+                        cmd.Parameters.AddWithValue("@provIdProv", entidad.ProvIdProv);
+                        cmd.Parameters.AddWithValue("@Proceso", entidad.Proceso);
+                        cmd.Parameters.AddWithValue("@Posicion", entidad.Posicion);
+                        cmd.Parameters.AddWithValue("@Importe", entidad.Importe);
+
+                        await cmd.ExecuteNonQueryAsync();
+                    }
+                }
             }
         }
+
+        //public async Task InsertAsync(List<CondAdicEncabezado> entidad)
+        //{
+        //    using (SqlConnection conn = new SqlConnection(_connectionString))
+        //    {
+        //        string query = @"INSERT INTO tblCondAdicEncabezado 
+        //                     (reqIdClave, IdCondicion, provIdProv, Proceso, Posicion, Importe)
+        //                     VALUES (@reqIdClave, @IdCondicion, @provIdProv, @Proceso, @Posicion, @Importe)";
+        //        SqlCommand cmd = new SqlCommand(query, conn);
+        //        cmd.Parameters.AddWithValue("@reqIdClave", entidad.ReqIdClave);
+        //        cmd.Parameters.AddWithValue("@IdCondicion", entidad.IdCondicion);
+        //        cmd.Parameters.AddWithValue("@provIdProv", entidad.ProvIdProv);
+        //        cmd.Parameters.AddWithValue("@Proceso", entidad.Proceso);
+        //        cmd.Parameters.AddWithValue("@Posicion", entidad.Posicion);
+        //        cmd.Parameters.AddWithValue("@Importe", entidad.Importe);
+
+        //        await conn.OpenAsync();
+        //        await cmd.ExecuteNonQueryAsync();
+        //    }
+        //}
 
         public async Task<CondAdicEncabezado> GetByIdAsync(string reqIdClave, string idCondicion)
         {
@@ -98,25 +125,79 @@ namespace RequisicionesApi.Services
             return lista;
         }
 
-        public async Task UpdateAsync(CondAdicEncabezado entidad)
+
+
+        public async Task<int> UpdateAsync(List<CondAdicEncabezado> entidades)
         {
+            if (entidades == null || entidades.Count == 0)
+                return 0;
+
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = @"UPDATE tblCondAdicEncabezado
-                             SET provIdProv = @provIdProv, Proceso = @Proceso, Posicion = @Posicion, Importe = @Importe
-                             WHERE reqIdClave = @reqIdClave AND IdCondicion = @IdCondicion";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@reqIdClave", entidad.ReqIdClave);
-                cmd.Parameters.AddWithValue("@IdCondicion", entidad.IdCondicion);
-                cmd.Parameters.AddWithValue("@provIdProv", entidad.ProvIdProv);
-                cmd.Parameters.AddWithValue("@Proceso", entidad.Proceso);
-                cmd.Parameters.AddWithValue("@Posicion", entidad.Posicion);
-                cmd.Parameters.AddWithValue("@Importe", entidad.Importe);
-
                 await conn.OpenAsync();
-                await cmd.ExecuteNonQueryAsync();
+                using (SqlTransaction tx = conn.BeginTransaction())
+                using (SqlCommand cmd = new SqlCommand(
+                    @"UPDATE tblCondAdicEncabezado
+              SET provIdProv = @provIdProv, Proceso = @Proceso, Posicion = @Posicion, Importe = @Importe
+              WHERE reqIdClave = @reqIdClave AND IdCondicion = @IdCondicion", conn, tx))
+                {
+                    // Define parámetros una sola vez (reutilizados en el loop)
+                    var pReqIdClave = cmd.Parameters.Add("@reqIdClave", SqlDbType.Int);
+                    var pIdCondicion = cmd.Parameters.Add("@IdCondicion", SqlDbType.Int);
+                    var pProvIdProv = cmd.Parameters.Add("@provIdProv", SqlDbType.Int);
+                    var pProceso = cmd.Parameters.Add("@Proceso", SqlDbType.VarChar, 50);
+                    var pPosicion = cmd.Parameters.Add("@Posicion", SqlDbType.Int);
+                    var pImporte = cmd.Parameters.Add("@Importe", SqlDbType.Decimal);
+                    pImporte.Precision = 18;
+                    pImporte.Scale = 2;
+
+                    int totalRows = 0;
+
+                    try
+                    {
+                        foreach (var entidad in entidades)
+                        {
+                            pReqIdClave.Value = entidad.ReqIdClave;
+                            pIdCondicion.Value = entidad.IdCondicion;
+                            pProvIdProv.Value = entidad.ProvIdProv;
+                            pProceso.Value = (object?)entidad.Proceso ?? DBNull.Value;
+                            pPosicion.Value = entidad.Posicion;
+                            pImporte.Value = entidad.Importe;
+
+                            totalRows += await cmd.ExecuteNonQueryAsync();
+                        }
+
+                        tx.Commit();
+                        return totalRows; // filas actualizadas en total
+                    }
+                    catch
+                    {
+                        tx.Rollback();
+                        throw;
+                    }
+                }
             }
         }
+
+        //public async Task UpdateAsync(List<CondAdicEncabezado> entidad)
+        //{
+        //    using (SqlConnection conn = new SqlConnection(_connectionString))
+        //    {
+        //        string query = @"UPDATE tblCondAdicEncabezado
+        //                     SET provIdProv = @provIdProv, Proceso = @Proceso, Posicion = @Posicion, Importe = @Importe
+        //                     WHERE reqIdClave = @reqIdClave AND IdCondicion = @IdCondicion";
+        //        SqlCommand cmd = new SqlCommand(query, conn);
+        //        cmd.Parameters.AddWithValue("@reqIdClave", entidad.ReqIdClave);
+        //        cmd.Parameters.AddWithValue("@IdCondicion", entidad.IdCondicion);
+        //        cmd.Parameters.AddWithValue("@provIdProv", entidad.ProvIdProv);
+        //        cmd.Parameters.AddWithValue("@Proceso", entidad.Proceso);
+        //        cmd.Parameters.AddWithValue("@Posicion", entidad.Posicion);
+        //        cmd.Parameters.AddWithValue("@Importe", entidad.Importe);
+
+        //        await conn.OpenAsync();
+        //        await cmd.ExecuteNonQueryAsync();
+        //    }
+        //}
 
         public async Task DeleteAsync(string reqIdClave, string idCondicion)
         {

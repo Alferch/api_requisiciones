@@ -34,14 +34,14 @@ namespace RequisicionesApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Insert([FromBody] CondAdicEncabezado entidad)
+        public async Task<IActionResult> Insert([FromBody] List<CondAdicEncabezado> entidad)
         {
             await _service.InsertAsync(entidad);
             return Ok("Registro insertado correctamente");
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update([FromBody] CondAdicEncabezado entidad)
+        public async Task<IActionResult> Update([FromBody] List<CondAdicEncabezado> entidad)
         {
             await _service.UpdateAsync(entidad);
             return Ok("Registro actualizado correctamente");
