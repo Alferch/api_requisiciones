@@ -2333,11 +2333,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\RequisicionesApi.csproj",
+      "projectUniqueName": "D:\\Requisiciones\\Requisiciones_api\\RequisicionesApi.csproj",
       "projectName": "RequisicionesApi",
-      "projectPath": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\RequisicionesApi.csproj",
+      "projectPath": "D:\\Requisiciones\\Requisiciones_api\\RequisicionesApi.csproj",
       "packagesPath": "C:\\Users\\fherreras\\.nuget\\packages\\",
-      "outputPath": "D:\\Desarrollo\\requisicionesWebApi\\RequisicionesApi\\obj\\",
+      "outputPath": "D:\\Requisiciones\\Requisiciones_api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "d:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
