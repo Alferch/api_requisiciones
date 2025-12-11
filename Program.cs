@@ -92,6 +92,9 @@ builder.Services.AddScoped<ICondAdicEncabezadoService>(sp =>
 builder.Services.AddScoped<IDashboardService, DashboardService>();
 
 
+builder.Services.AddScoped<ICargaService, CargaService>();
+builder.Services.Configure<ExcelOptions>(builder.Configuration.GetSection("Excel"));
+
 
 
 
@@ -144,6 +147,12 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
+
+
+public class ExcelOptions
+{
+    public int MaxSizeMB { get; set; } = 10;
+}
 
 
 //var builder = WebApplication.CreateBuilder(args);
